@@ -88,22 +88,21 @@ export function Chat({
           }
         }
       >
-        <div className="overflow-y-auto max-h-[400px] scrollbar-hide">
-          <div
-            ref={chatContainerRef}
-            onScroll={handleScroll}
-            // className="flex-1 overflow-y-auto bg-[#ddb66ea6] rounded-t-lg shadow-xl border-t border-l border-r border-[#fed284] p-4 scrollbar-hide"
-          >
-            {visibleMessages.map((message) => (
-              <PreviewMessage
-                key={message.id}
-                role={message.role}
-                content={message.content}
-                attachments={message.experimental_attachments}
-                toolInvocations={message.toolInvocations}
-              />
-            ))}
-          </div>
+        <div
+          ref={chatContainerRef}
+          onScroll={handleScroll}
+          className="overflow-y-auto max-h-[400px] scrollbar-hide"
+          // className="flex-1 overflow-y-auto bg-[#ddb66ea6] rounded-t-lg shadow-xl border-t border-l border-r border-[#fed284] p-4 scrollbar-hide"
+        >
+          {visibleMessages.map((message) => (
+            <PreviewMessage
+              key={message.id}
+              role={message.role}
+              content={message.content}
+              attachments={message.experimental_attachments}
+              toolInvocations={message.toolInvocations}
+            />
+          ))}
         </div>
 
         <div

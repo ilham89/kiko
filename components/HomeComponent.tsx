@@ -65,7 +65,7 @@ const HomeComponent = ({
         animate="rotate"
         transition={{
           delay: 1.2,
-          duration: 2,
+          duration: 1,
           ease: 'linear',
           repeat: Infinity,
           repeatType: 'reverse',
@@ -86,7 +86,7 @@ const HomeComponent = ({
         animate="rotate"
         transition={{
           delay: 1.2,
-          duration: 2,
+          duration: 1,
           ease: 'linear',
           repeat: Infinity,
           repeatType: 'reverse',
@@ -111,9 +111,9 @@ const HomeComponent = ({
           loading="eager"
           src="/buy.png"
           alt="Castle"
-          width={200}
+          width={150}
           height={200}
-          className="relative z-30 w-[1100px] lg:w-[160px] h-[100px] lg:h-[150px] hover:drop-shadow-[10px_5px_33px_#26c947]"
+          className="relative z-30 w-[90px] lg:w-[110px] h-[100px] lg:h-[150px] hover:drop-shadow-[10px_5px_33px_#26c947]"
           style={{
             transition: 'all 0.6s',
           }}
@@ -132,7 +132,7 @@ const HomeComponent = ({
           alt="Castle"
           width={150}
           height={200}
-          className="relative z-30 w-[110px] lg:w-[160px] h-[100px] lg:h-[150px] hover:drop-shadow-[10px_5px_33px_#26c947]"
+          className="relative z-30 w-[90px] lg:w-[110px] h-[100px] lg:h-[150px] hover:drop-shadow-[10px_5px_33px_#26c947]"
           style={{
             transition: 'all 0.6s',
           }}

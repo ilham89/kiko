@@ -57,7 +57,7 @@ const HallComponent = ({
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden flex">
       <motion.div className="absolute inset-0">
         <Image
           loading="eager"
@@ -107,11 +107,12 @@ const HallComponent = ({
 
       {/* <div className="size-full flex flex-col lg:flex-row lg:mx-28 m-0">
         <div className="w-full lg:w-1/2 h-1/2 lg:h-full"> */}
+
       <div
         style={{
           width: '100%',
           maxWidth: '750px',
-          maxHeight: '100vh',
+          maxHeight: '800px',
           height: '100%',
           background: 'url(/bg-chat.png)',
           backgroundSize: 'cover',
@@ -119,7 +120,7 @@ const HallComponent = ({
           // backgroundOrigin: 'content-box, border-box',
           backgroundPosition: 'center',
           position: 'relative',
-          margin: '0 auto',
+          margin: 'auto auto',
         }}
       >
         <Chat
