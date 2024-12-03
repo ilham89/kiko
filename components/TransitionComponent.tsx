@@ -1,20 +1,45 @@
-import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import { CLOUD } from '@/lib/constants';
+
+import './index.css';
 
 const TransitionComponent = ({ animate = false }) => {
-  const [isAnimating, setIsAnimating] = useState(true);
+  function createSpongeBobBubbles() {
+    const container = document.getElementById('bubbleContainer');
+    const bubbleCount = 300;
+
+    for (let i = 0; i < bubbleCount; i++) {
+      const bubble = document.createElement('div');
+      bubble.classList.add('bubble');
+
+      // Randomize size
+      const size = Math.random() * 80 + 20; // 20-100px
+      bubble.style.width = `${size}px`;
+      bubble.style.height = `${size}px`;
+
+      // Start from bottom right
+      bubble.style.right = `${Math.random() * 100}%`;
+      bubble.style.bottom = `${Math.random() * 100}%`;
+
+      // Randomize animation delay
+      bubble.style.animationDelay = `${Math.random() * 0.5}s`;
+
+      // Add slight variation to bubble appearance
+      bubble.style.border = `${Math.random() * 2 + 1}px solid rgba(255,255,255,0.5)`;
+
+      // @ts-ignore
+      container.appendChild(bubble);
+    }
+  }
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsAnimating(false);
-    }, 2000);
+    createSpongeBobBubbles();
   }, []);
 
   return (
     <>
-      {animate && (
+      <div className="bubble-container" id="bubbleContainer"></div>
+
+      {/* {animate && (
         <>
           <motion.div
             className="fixed inset-y-0 left-0 w-screen h-screen z-40"
@@ -168,7 +193,7 @@ const TransitionComponent = ({ animate = false }) => {
             />
           </motion.div>
         </>
-      )}
+      )} */}
     </>
   );
 };
