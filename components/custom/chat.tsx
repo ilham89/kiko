@@ -74,7 +74,7 @@ export function Chat({
   const visibleMessages = messages;
 
   return (
-    <div className="absolute left-2 lg:left-[16%] md:left-[15%] bottom-[14%] lg:bottom-[120px] w-[95%] md:w-[65%]">
+    <div className="absolute left-2 lg:left-[17%] md:left-[18%] bottom-[14%] lg:bottom-[120px] w-[95%] md:w-[63%]">
       {/* <div className="absolute inset-0">
         <div className="absolute inset-0"> */}
       <div
