@@ -141,6 +141,7 @@ const HomeComponent = ({
 
       <motion.div className="absolute bottom-[47%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 cursor-pointer">
         <Image
+          onClick={() => window.open('https://github.com/ceaselesssss/kiko')}
           loading="eager"
           src="/poc.png"
           alt="Castle"
