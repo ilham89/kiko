@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: 'Kiko',
     images: [
       {
-        url: '/favicon.png',
+        url: '/og-image.png',
         alt: 'Kiko',
       },
     ],
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Kiko',
-    images: ['/favicon.png'],
+    images: ['/og-image.png'],
   },
   icons: {
     icon: '/favicon.png',
