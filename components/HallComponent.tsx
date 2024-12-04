@@ -61,7 +61,73 @@ const HallComponent = ({
       <motion.div className="absolute inset-0">
         <Image
           loading="eager"
-          src="/bg-chatbot.png"
+          src="/bg-chatbot2.png"
+          alt="Background Screen"
+          layout="fill"
+          objectFit="cover"
+          priority
+          className="size-full"
+        />
+      </motion.div>
+      <motion.div className="absolute inset-0">
+        <Image
+          loading="eager"
+          src="/chatbot-1.png"
+          alt="Background Screen"
+          layout="fill"
+          objectFit="cover"
+          priority
+          className="size-full"
+        />
+      </motion.div>
+      <motion.div className="absolute inset-0">
+        <Image
+          loading="eager"
+          src="/chatbot-2.png"
+          alt="Background Screen"
+          layout="fill"
+          objectFit="cover"
+          priority
+          className="size-full"
+        />
+      </motion.div>
+      <motion.div className="absolute inset-0">
+        <Image
+          loading="eager"
+          src="/chatbot-3.png"
+          alt="Background Screen"
+          layout="fill"
+          objectFit="cover"
+          priority
+          className="size-full"
+        />
+      </motion.div>
+      <motion.div className="absolute inset-0">
+        <Image
+          loading="eager"
+          src="/chatbot-4.png"
+          alt="Background Screen"
+          layout="fill"
+          objectFit="cover"
+          priority
+          className="size-full"
+        />
+      </motion.div>
+      <motion.div className="absolute inset-0">
+        <Image
+          loading="eager"
+          src="/chatbot-5.png"
+          alt="Background Screen"
+          layout="fill"
+          objectFit="cover"
+          priority
+          className="size-full"
+        />
+      </motion.div>
+      <motion.div className="absolute inset-0">
+        <Image
+          loading="eager"
+          src="/kodok-chatbot.gif"
           alt="Background Screen"
           layout="fill"
           objectFit="cover"
@@ -108,13 +174,25 @@ const HallComponent = ({
       {/* <div className="size-full flex flex-col lg:flex-row lg:mx-28 m-0">
         <div className="w-full lg:w-1/2 h-1/2 lg:h-full"> */}
 
+      {/* <motion.div className="absolute inset-0">
+        <Image
+          loading="eager"
+          src="/gerbang-ijo.png"
+          alt="Background Screen"
+          layout="fill"
+          objectFit="cover"
+          priority
+          className="size-full"
+        /> */}
+
+      {/* </motion.div> */}
       <div
         style={{
           width: '100%',
           maxWidth: '750px',
           maxHeight: '800px',
           height: '100%',
-          background: 'url(/bg-chat.png)',
+          background: 'url(/gerbang-ijo-fix.png)',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           // backgroundOrigin: 'content-box, border-box',
@@ -157,7 +235,7 @@ const HallComponent = ({
       >
         <Image
           loading="eager"
-          src="/back.png"
+          src="/back-ijo2.png"
           alt="Background Screen"
           width={100}
           height={50}

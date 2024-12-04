@@ -154,6 +154,21 @@ const HomeComponent = ({
         />
       </motion.div>
 
+      <motion.div className="absolute bottom-[46%] left-0 right-0 w-fit z-30 cursor-pointer hover:animate-shake mx-auto">
+        <Image
+          onClick={() => window.open('https://x.com/ceaseless')}
+          loading="eager"
+          src="/dev.png"
+          alt="Castle"
+          width={100}
+          height={50}
+          className="relative hover:drop-shadow-[10px_5px_33px_#26c947] hover:scale-110"
+          style={{
+            transition: 'all 0.6s',
+          }}
+        />
+      </motion.div>
+
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
