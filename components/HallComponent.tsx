@@ -127,7 +127,7 @@ const HallComponent = ({
       <motion.div className="absolute inset-0">
         <Image
           loading="eager"
-          src="/kodok-chatbot.gif"
+          src="/last.gif"
           alt="Background Screen"
           layout="fill"
           objectFit="cover"
