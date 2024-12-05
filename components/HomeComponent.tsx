@@ -108,6 +108,11 @@ const HomeComponent = ({
         transition={{ duration: 1, delay: 1.2 }}
       >
         <Image
+          onClick={() =>
+            window.open(
+              'https://pump.fun/6tpVTrh9T2by1yEoXXUiqQmCLMVyWhmu8hKPZ8Bfpump'
+            )
+          }
           loading="eager"
           src="/buy.png"
           alt="Castle"
